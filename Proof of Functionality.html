@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Hello...</title>
+<style type="text/css">
+#mainContent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+	font-weight: bold;
+	background-color: #E3F0FB;
+	border-radius: 4px;
+	padding: 10px;
+	text-align: center;
+}
+.buttonStyle {
+	border-radius: 4px;
+	border: thin solid #F0E020;
+	padding: 5px;
+	background-color: #F8F094;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	color: #663300;
+	width: 75px;
+}
+
+.buttonStyle:hover {
+	border: thin solid #FFCC00;
+	background-color: #FCF9D6;
+	color: #996633;
+	cursor: pointer;
+}
+.buttonStyle:active {
+	border: thin solid #99CC00;
+	background-color: #F5FFD2;
+	color: #669900;
+	cursor: pointer;
+}
+
+</style>
+</head>
+
+<body>
+<div style = "visibility:hidden" id = "imgA"><img href= "http://i.imgur.com/RwISXFx.gif" /></div>
+<button type = "button" 
+onclick = "document.getElementById("imgA").style.visibility ="visible"">Display XBONE</button>
+
+<div id="mainContent">
+
+<button id="buttonA" class="buttonStyle">A</button>
+<button id="buttonB" class="buttonStyle">B</button>
+</div>
+<script> 
+var buttonA = document.getElementById("buttonA");
+var myText = document.getElementById("helloText");
+
+buttonA.addEventListener('click', swapImage(),false)
+
+function doSomething() {
+	
+}
+function openWin(img){
+
+           var path = "images/"
+
+           window.open("http://i.imgur.com/RwISXFx.gif","mywin","menubar=0,resizable=0,width=200,height=200")
+}
+
+
+
+</script>
+ </head>
+</script>
+
+</body>
+</html>
